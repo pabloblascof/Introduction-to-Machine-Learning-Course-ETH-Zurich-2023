@@ -16,10 +16,15 @@ Task 1a, was meant to familiarize with the scikit-learn library and perform ridg
 
 The script saves the results, i.e., average RMSE values for each lambda, in a CSV file named "results.csv."
 
-### Task 1b: Exploring Linear Regression Models
+### Task 1b: Exploring Feature Transformations
 
-In Task 1b, our objective was to discover a well-fitting linear regression model to achieve a high-performance score. The code implementation involves a "fit" function, which transforms the data into the required format. This transformation is achieved through the "transform_data" function, which reshapes the array into five linear features, five quadratic features, five exponential features, five cosine features, and one constant feature using a loop.
+The script preprocesses the input data by transforming it into a more complex feature space, fits a Lasso regression model to this transformed data, and saves the model's parameters (weights) in an output file. This is typically done for the purpose of regression or predictive modeling with potentially more expressive feature representations. It consists of the following steps:
+  
+  1) Data Transformation: The transform_data function takes a matrix X with 5 input features and transforms these features into a set of 21 new features. These new features include linear, quadratic,   exponential, and cosine transformations of the original features, along with a constant feature. The transformed data is returned as an array of shape (700, 21).
+  
+  2) Model Fitting: The fit function receives the training data points X and labels y. It first transforms the data using the transform_data function and then fits a Lasso regression model with a       specified alpha (0.3) to the transformed data. It returns the optimal parameters (weights) of the Lasso regression model, which are the coefficients for the 21 transformed features.
+  
+  3) Data Loading: The script loads a dataset from a CSV file named "train.csv" using Pandas. It extracts the labels (denoted as "y") and the input features while excluding the "Id" column.
+  
+  The transformed data is used to train a Lasso regression model, and the resulting weights of the model are saved to a file named "results.csv."
 
-To identify the best linear regression model, similar to Task 1a, we employed the scikit-learn library. We systematically experimented with different models and compared their scores, ultimately selecting the Lasso model as the most suitable option.
-
-These revised descriptions offer a more concise and organized understanding of the tasks and the approach taken.
