@@ -1,6 +1,4 @@
-# This serves as a template which will guide you through the implementation of this task.  It is advised
-# to first read the whole template and get a sense of the overall structure of the code before trying to fill in any of the TODO gaps
-# First, we import necessary libraries:
+# This serves as a template which will guide you through the implementation of this task.  
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression, Lasso, Ridge
