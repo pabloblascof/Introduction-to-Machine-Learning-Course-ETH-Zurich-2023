@@ -1,12 +1,16 @@
 ### Task 1a: Ridge Regression with Scikit-Learn
 
 Task 1a, was meant to familiarize with the scikit-learn library and perform ridge regression with cross validation. It consists of the following steps:
+
 Import necessary libraries, including Pandas, NumPy, and scikit-learn components for K-Fold cross-validation, mean squared error calculation, and Ridge Regression.
+
 Define three functions:
 fit_2: Trains a Ridge Regression model with a specified lambda on training data and makes predictions on test data.
 calculate_RMSE_2: Computes the Root Mean Square Error (RMSE) between true and predicted values.
 average_LR_RMSE_2: Performs k-fold cross-validation for Ridge Regression, testing different lambda values and reporting average RMSE values.
+
 Load a dataset from a CSV file, extract the input features and labels.
+
 Call the average_LR_RMSE_2 function with the input data, a list of lambda values, and the number of cross-validation folds.
 The script saves the results, i.e., average RMSE values for each lambda, in a CSV file named "results.csv."
 
