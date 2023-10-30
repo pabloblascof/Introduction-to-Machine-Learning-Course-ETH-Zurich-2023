@@ -1,6 +1,4 @@
-# This serves as a template which will guide you through the implementation of this task. It is advised
-# to first read the whole template and get a sense of the overall structure of the code before trying to fill in any of the TODO gaps
-# First, we import necessary libraries:
+# This serves as a template which will guide you through the implementation of this task. +
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import KFold 
@@ -23,9 +21,7 @@ def fit_2(X_tr, y_tr, lam, X_t):
     Returns
     ----------
     y_pred: array of floats: dim = (15,), prediction of ridge regression
-    """
-    # TODO: Enter your code here
-    
+    """    
     # Create Linear Regression Ridge Model
     model = Ridge(alpha = lam, fit_intercept=(False), solver = 'auto', tol = 1e-5, max_iter = 6000)
     
@@ -86,8 +82,6 @@ def average_LR_RMSE_2(X, y, lambdas, n_folds):
     RMSE_mat = np.zeros((n_folds, len(lambdas)))
     print(RMSE_mat.shape)
 
-    # TODO: Enter your code here. Hint: Use functions 'fit' and 'calculate_RMSE' with training and test data
-    # and fill all entries in the matrix 'RMSE_mat'
     
     #K-Folds cross-validator 
     kf = KFold(n_splits=n_folds, shuffle = True)
