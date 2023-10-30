@@ -1,12 +1,16 @@
-**Task 1a: Linear Regression with Scikit-Learn**
+### Task 1a: Ridge Regression with Scikit-Learn
 
-To approach Task 1a, we followed the instructions provided and leveraged the scikit-learn library. The main function, "average_LR_RSME_2," conducts K-Folds cross-validation using scikit-learn's KFold function. It iterates through different lambda values and data splits.
+Task 1a, was meant to familiarize with the scikit-learn library and perform ridge regression with cross validation. It consists of the following steps:
+Import necessary libraries, including Pandas, NumPy, and scikit-learn components for K-Fold cross-validation, mean squared error calculation, and Ridge Regression.
+Define three functions:
+fit_2: Trains a Ridge Regression model with a specified lambda on training data and makes predictions on test data.
+calculate_RMSE_2: Computes the Root Mean Square Error (RMSE) between true and predicted values.
+average_LR_RMSE_2: Performs k-fold cross-validation for Ridge Regression, testing different lambda values and reporting average RMSE values.
+Load a dataset from a CSV file, extract the input features and labels.
+Call the average_LR_RMSE_2 function with the input data, a list of lambda values, and the number of cross-validation folds.
+The script saves the results, i.e., average RMSE values for each lambda, in a CSV file named "results.csv."
 
-Within this loop, two essential functions come into play: "fit_2" and "calculate_RSME_2. "fit_2" is responsible for creating a linear regression model using Ridge regression and fitting it to the training samples. For computing the root mean squared error, "calculate_RSME_2" employs the formula we learned in lectures and task instructions.
-
-The "average_LR_RSME_2" function aggregates the root mean squared errors, and the resulting average is saved to an Excel file named "results."
-
-**Task 1b: Exploring Linear Regression Models**
+### Task 1b: Exploring Linear Regression Models
 
 In Task 1b, our objective was to discover a well-fitting linear regression model to achieve a high-performance score. The code implementation involves a "fit" function, which transforms the data into the required format. This transformation is achieved through the "transform_data" function, which reshapes the array into five linear features, five quadratic features, five exponential features, five cosine features, and one constant feature using a loop.
 
