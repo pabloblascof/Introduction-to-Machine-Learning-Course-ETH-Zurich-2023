@@ -11,5 +11,4 @@ Projects developed at the Introduction to Machine Learning 2022 course in ETHZ. 
 
 **[Task 3.](./Task%203)** Similarity information between image triplets with Neural Networks
 
-**[Task 4.](./Task%204)** Given a triplet of food images (a, p, n), choose an image between p and n that is more similar to a
-
+**[Task 4.](./Task%204)** Transfer learning for HOMO-LUMO Gap prediction of molecules
