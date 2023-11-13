@@ -10,5 +10,4 @@
 
 - **Results Saving:** : These predictions are saved in a CSV file named "results.csv." This file can be used for further analysis or evaluation of the model's performance.
 
-Feel free to use and adapt this template to your specific project requirements.
 
