@@ -3,12 +3,13 @@ Projects developed at the Introduction to Machine Learning 2022 course in ETHZ. 
 
 ### Task descriptions
 
-**Task 1a.** Ridge regression with k-fold cross-validation
+**[Task 1a.](./Task%201)** Ridge regression with k-fold cross-validation
 
-**Task 1b.** `Task 1a` + Feature transformation
+**[Task 1b.](./Task%201)** `Task 1a` + Feature transformation
 
-**Task 2.** Data preprocessing, handling, inputation and predicting with Gaussian Process Regressor
+**[Task 2.](./Task%202)** Data preprocessing, handling, imputation, and predicting with Gaussian Process Regressor
 
-**Task 3.** Given a sequence of 4 alphabets (molecules), classify the sequence into 1 (active) or 0 (inactive).
+**[Task 3.](./Task%203)** Given a sequence of 4 alphabets (molecules), classify the sequence into 1 (active) or 0 (inactive)
 
-**Task 4.** Given a triplet of food images `(a, p, n)`, choose an image between `p` and `n` that is more similar to `a`.
+**[Task 4.](./Task%204)** Given a triplet of food images (a, p, n), choose an image between p and n that is more similar to a
+
